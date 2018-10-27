@@ -24,7 +24,7 @@ public class parentScript : MonoBehaviour {
         if (name.Contains("a") && OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
         {
             Atriggered = true;
-        }else if (name.Contains("b") && Atriggered == true && OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
+        }else if (name.Contains("b") && Atriggered == true && OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger))
         {
             Debug.Log("IT WORKED");
         }
